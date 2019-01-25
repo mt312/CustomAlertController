@@ -3,11 +3,11 @@
 Subclass of UIAlertController
 
 ## Development Environmental
-+ Xcode 9.1
-+ Swift 4
++ Xcode 10.0
++ Swift 4.2
 
 ## System Requirements
-+ iOS 10, 11
++ iOS 12
 
 ## ActionSheet
 
