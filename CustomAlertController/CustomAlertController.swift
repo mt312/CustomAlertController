@@ -21,7 +21,7 @@ class CustomAlertController: UIAlertController {
     }
     
     private func setupCheckmark() {
-        if checkedIndex >= 0 && checkedIndex < actions.count {
+        if 0 ..< actions.count ~= checkedIndex {
             actions[checkedIndex].setValue(true, forKey: "checked")
         }
     }

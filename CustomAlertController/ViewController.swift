@@ -24,15 +24,15 @@ class ViewController: UIViewController {
         
         alert.popoverPresentationController?.barButtonItem = sender
         
-        alert.addAction(UIAlertAction(title: "SNS", style: .default) { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "SNS", style: .default) { action in
         })
-        alert.addAction(UIAlertAction(title: "Mail", style: .default) { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Mail", style: .default) { action in
         })
-        alert.addAction(UIAlertAction(title: "Download", style: .default) { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Download", style: .default) { action in
         })
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { action in
         })
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true)
     }
     
     @IBAction func alertButtonTouched(_ sender: UIBarButtonItem) {
@@ -47,16 +47,16 @@ class ViewController: UIViewController {
         alert.contentViewController = vc
         alert.checkedIndex = 1
         
-        alert.addTextField() { (text: UITextField) in
+        alert.addTextField { textField in
         }
-        alert.addAction(UIAlertAction(title: "SNS", style: .default) { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "SNS", style: .default) { action in
         })
-        alert.addAction(UIAlertAction(title: "Mail", style: .default) { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Mail", style: .default) { action in
         })
-        alert.addAction(UIAlertAction(title: "Download", style: .default) { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Download", style: .default) { action in
         })
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { action in
         })
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true)
     }
 }
